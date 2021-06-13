@@ -1,0 +1,7 @@
+(define (problem pb5)
+  (:domain cubes)
+  (:objects a b c d e)
+  (:init (onGround a) (onGround b) (onGround c) (onGround d) (onGround e)
+    (clear a) (clear b) (clear c) (clear d) (clear e)
+    (equal a a) (equal b b) (equal c c) (equal d d) (equal e e))
+  (:goal (and (on a b) (on b c) (on c d) (on d e))))
